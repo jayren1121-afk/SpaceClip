@@ -1,0 +1,82 @@
+- !<AssetImportMetadata/4adf0b1b-229e-4627-9b25-10a340ddb5f7>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 85e482b3-3f13-4377-bef2-8b7087e74ecd
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 85e482b3-3f13-4377-bef2-8b7087e74ecd
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> f4b04c6e-32f0-4b8d-a636-3a6830e84b89
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/f4b04c6e-32f0-4b8d-a636-3a6830e84b89>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 5c66d319-32f3-485c-a21c-aeaa5c246da8
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    camera: false
+    controls: false
+    debugColliders: false
+    debugState: false
+    followDistanceCm: false
+    followDropCm: false
+    miniature: false
+    scan: false
+    shelfSeconds: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - camera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+      scan: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      miniature: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      controls: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      followDistanceCm: !<float> 60.000000
+      followDropCm: !<float> 10.000000
+      shelfSeconds: !<float> 5.000000
+      debugColliders: false
+      debugState: phase=scanning
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">SpaceClipMain – life-size wireframe</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">References</span>"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input Component.Camera camera {"hint":"Specs camera with world device tracking."}'
+    - '// @input AssignableType_1 scan {"hint":"Life-size wireframe drawn by Clip."}'
+    - '// @input AssignableType_2 miniature {"hint":"Highlight, selection, sparkles, and undo for the life-size wireframe."}'
+    - '// @input AssignableType_3 controls {"hint":"Clip, Undo, Delete, Save, and the saved-chunk cards."}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float followDistanceCm = 50 {"hint":"How far in front of the view the button row is locked, in centimeters.", "widget":"slider", "min":40, "max":70, "step":1}'
+    - '// @input float followDropCm = 22 {"hint":"How far below the view center the button row is locked, in centimeters.", "widget":"slider", "min":12, "max":32, "step":1}'
+    - '// @input float shelfSeconds = 5 {"hint":"Seconds the shelf stays up before the buttons come back.", "widget":"slider", "min":2, "max":10, "step":0.5}'
+    - '// @input bool debugColliders {"hint":"Draw stand-in room colliders when the fallback room is in use."}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Debug"}'
+    - '// @input string debugState = "phase=idle" {"hint":"Live tester string. Updated every frame. Do not edit."}'
+    - '// @ui {"widget":"group_end"}'

@@ -1,0 +1,67 @@
+- !<AssetImportMetadata/498f1d58-f4e7-4e19-85c0-794c0db866ef>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> a7592c96-5b30-432d-ad1d-e49cfe882cae
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> a7592c96-5b30-432d-ad1d-e49cfe882cae
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 3e8919ca-81e0-4aa2-b142-6ff4d6a28a6b
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/3e8919ca-81e0-4aa2-b142-6ff4d6a28a6b>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: e1bd7b5d-915e-4e2c-81c4-3f26b17be7f0
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    cellSizeCm: false
+    eyeHeightCm: false
+    maxCells: false
+    standInRoot: false
+    wireColor: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - standInRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      cellSizeCm: !<float> 20.000000
+      eyeHeightCm: !<float> 160.000000
+      maxCells: !<float> 480.000000
+      wireColor: !<Vec4> {x: 0.650000, y: 0.950000, z: 1.000000, w: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">SpaceClipScanController – surface wireframe</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">References</span>"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input SceneObject standInRoot {"hint":"Empty object. The fallback room is built here if the preview world query never hits."}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">Settings</span>"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float cellSizeCm = 14 {"hint":"World size of one wireframe cell, in centimeters. Used to dedupe hits, not to move them off the surface.", "widget":"slider", "min":10, "max":40, "step":1}'
+    - '// @input float eyeHeightCm = 160 {"hint":"Eye height used to stand the fallback room on the floor, in centimeters.", "widget":"slider", "min":120, "max":190, "step":1}'
+    - '// @input float maxCells = 1600 {"hint":"Maximum sketch strokes kept from one Clip.", "widget":"slider", "min":80, "max":2000, "step":10}'
+    - '// @input vec4 wireColor = "{0.05, 0.78, 1, 1}" {"hint":"Light cyan wireframe color for an additive display.", "widget":"color"}'
+    - '// @ui {"widget":"group_end"}'
